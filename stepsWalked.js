@@ -38,7 +38,7 @@ function spacesMoved(){
 
 function howManyBattleSpaces(){
 	var spacesToBattle = Math.floor((Math.random() * 12) + 1);
-	return spacesToBattle;
+	document.getElementById('battleSpaces').innerHTML = spacesToBattle + " Battle Spaces";
 }
 
 function enemySelect(){
