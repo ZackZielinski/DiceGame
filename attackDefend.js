@@ -24,5 +24,5 @@ function damageDealt(attack, defend){
 	else{
 		damageCalculate = 0;
 	}
-	document.getElementById('stats').innerHTML = "Took " + " damage"
+	document.getElementById('stats').innerHTML = "Took " + damageCalculate + " damage"
 }

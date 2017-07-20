@@ -88,4 +88,6 @@ function lootTable(){
 
 function pointsScored(LootType, rarityLevel){
 
+	
+
 }
