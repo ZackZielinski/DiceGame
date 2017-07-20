@@ -36,6 +36,10 @@ function spacesMoved(){
 
 }
 
+function howManyBattleSpaces(){
+	var spacesToBattle = Math.floor((Math.random() * 12) + 1);
+	return spacesToBattle;
+}
 
 function enemySelect(){
 	var enemyChoice = Math.floor((Math.random() * 8) + 1);
@@ -52,10 +56,10 @@ function enemySelect(){
 		document.getElementById('enemy').innerHTML = "Dark hound";
 		break;
 		case 4:
-		document.getElementById('enemy').innerHTML = "";
+		document.getElementById('enemy').innerHTML = "Acolyte";
 		break;
 		case 5:
-		document.getElementById('enemy').innerHTML = " Magic Strike";
+		document.getElementById('enemy').innerHTML = "";
 		break;
 		case 6:
 		document.getElementById('enemy').innerHTML = " Magic Strike";
