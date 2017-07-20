@@ -36,9 +36,14 @@ function spacesMoved(){
 
 }
 
-function howManyBattleSpaces(){
+function largeBoardBattleSpaces(){
+	var spacesToBattle = Math.floor((Math.random() * 20) + 1);
+	document.getElementByClass('laegeBattleSpaces').innerHTML = spacesToBattle + " Battle Spaces";
+}
+
+function smallBoardBattleSpaces(){
 	var spacesToBattle = Math.floor((Math.random() * 12) + 1);
-	document.getElementById('battleSpaces').innerHTML = spacesToBattle + " Battle Spaces";
+	document.getElementById('smallBattleSpaces').innerHTML = spacesToBattle + " Battle Spaces";
 }
 
 function enemySelect(){
@@ -59,16 +64,16 @@ function enemySelect(){
 		document.getElementById('enemy').innerHTML = "Acolyte";
 		break;
 		case 5:
-		document.getElementById('enemy').innerHTML = "";
+		document.getElementById('enemy').innerHTML = "Knight";
 		break;
 		case 6:
-		document.getElementById('enemy').innerHTML = " Magic Strike";
+		document.getElementById('enemy').innerHTML = "Sorcerer";
 		break;
 		case 7:
-		document.getElementById('enemy').innerHTML = " ";
+		document.getElementById('enemy').innerHTML = "Brute";
 		break;
 		case 8:
-		document.getElementById('enemy').innerHTML = " ";
+		document.getElementById('enemy').innerHTML = "Unleashed Gorlog";
 		break;
 	}
 }

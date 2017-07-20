@@ -1,7 +1,11 @@
 "use strict"
 
+var rarityNumber;
+var lootNumber;
+
+
 function rarityTable(){
-	var rarityNumber = Math.floor((Math.random() * 10) + 1);
+	rarityNumber = Math.floor((Math.random() * 10) + 1);
 
 	switch (rarityNumber){
 
@@ -39,7 +43,7 @@ function rarityTable(){
 }
 
 function lootTable(){
-	var lootNumber = Math.floor((Math.random() * 12) + 1);
+	lootNumber = Math.floor((Math.random() * 12) + 1);
 
 	switch (lootNumber){
 
@@ -80,4 +84,8 @@ function lootTable(){
 		document.getElementById('item').innerHTML = "Weapon";
 		break;
 	}
+}
+
+function pointsScored(LootType, rarityLevel){
+
 }

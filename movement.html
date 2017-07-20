@@ -11,18 +11,15 @@
 <button onclick="spacesMoved()">Movement</button>
 <button onclick="enemySelect()">Enemy Encounter</button>
 
-<p>This game utilizes a directional die to determin which way you will be moving (North, South, East, West).</p>
+<p>This game utilizes a directional die to determine which way you will be moving (North, South, East, West).</p>
 
-<p>Roll the die in order to determine how many battle spaces you will be required to make</p>
+<p>Roll the die in order to determine how many battle spaces you will be required to make depending upon how the board size will be.</p>
 
-<button onclick="howManyBattleSpaces()">Spaces to Battle</button>
-<p id="battleSpaces"></p>
+<button onclick="largeBoardBattleSpaces()">Large board</button>
+<p id = "largeBattleSpaces"></p>
 
-
-<form action="battle.html">
-<br>
-<button>Battle</button>
-</form>
+<button onclick="smallBoardBattleSpaces()">Small board</button>
+<p id = "smallBattleSpaces"></p>
 
 <p id= "direction"></p>
 <p id= "movement"></p>
