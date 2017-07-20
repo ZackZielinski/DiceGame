@@ -1,0 +1,9 @@
+li:hover{
+	background-color: #080806;
+}
+.footer{
+	 position: fixed;
+	 display: block;
+	 bottom: 0px;
+	 width: 100%;
+}

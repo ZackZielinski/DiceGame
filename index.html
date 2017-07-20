@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<meta charset="utf-8">
-
 	<title>Gaurdians and Greeds</title>
-	<link rel="stylesheet" type="text/css" href=".css">
-
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="digital.css">
+  <style>
+    .navbar {width: 100%;
+    	bottom: 5px;
+    	background-color: #008000;
+    }
+    footer {
+      background-color: #008000;
+      padding: 15px;
+    }
+  </style>
 </head>
 <body>
 
+<nav class="navbar navbar-inverse topper">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand"><span style="color: #1a1aff">G.</span><span style="color: #ffa500">G.</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Backstory</a></li>
+        <li><a href="movement.html">Start Playing</a></li>
+        <li><a href="dcComics.html">DC Comics</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <center>
-<h1>Welcome to Guardians and Greeds</h1>
+<h1>Welcome to <span style="color: #1a1aff">Guardians</span> and <span style="color: #ffa500">Greeds</span></h1>
 </center>
 
 <p>This Dungeons and Dragons style of game where you kill enemies in order to get the most amount of loot within a set number of rounds.</p>
+
 <p>Note: This does not keep track of the statistics. This is only to provide a set number of dice to this game. This allows any player to set up the board however they like, so you can always play differently. </p>
 
-<form id="" action="movement.html">
-<br>
-<button>Start Playing</button>
-</form>
 
+<footer class="container-fluid text-center footer"></footer>
 </body>
 </html>

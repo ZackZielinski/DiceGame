@@ -5,13 +5,7 @@
 </head>
 <body>
 
-<h1>Moving Around</h1>
-
-<button onclick="getDirection()">Direction</button>
-<button onclick="spacesMoved()">Movement</button>
-<button onclick="enemySelect()">Enemy Encounter</button>
-
-<p>This game utilizes a directional die to determine which way you will be moving (North, South, East, West).</p>
+<h1>Sarting the Game</h1>
 
 <p>Roll the die in order to determine how many battle spaces you will be required to make depending upon how the board size will be.</p>
 
@@ -21,8 +15,19 @@
 <button onclick="smallBoardBattleSpaces()">Small board</button>
 <p id = "smallBattleSpaces"></p>
 
+
+<p>This game utilizes a directional die to determine which way you will be moving (North, South, East, West).</p>
+
+
+<button onclick="getDirection()">Direction</button>
 <p id= "direction"></p>
+
+<button onclick="spacesMoved()">Movement</button>
 <p id= "movement"></p>
+
+<p>If you ever land on a Battle Space, you must roll to see what enemy you will be facing. Your turn ends on the first attack and you will not move until the creature is slain.</p>
+
+<button onclick="enemySelect()">Enemy Encounter</button>
 <p id= "enemy"></p>
 
 <script type="text/javascript" src="stepsWalked.js"></script>

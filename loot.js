@@ -3,7 +3,6 @@
 var rarityNumber;
 var lootNumber;
 
-
 function rarityTable(){
 	rarityNumber = Math.floor((Math.random() * 10) + 1);
 
@@ -86,7 +85,7 @@ function lootTable(){
 	}
 }
 
-function pointsScored(LootType, rarityLevel){
+function pointsScored(rarityLevel, lootType){
 
 	
 

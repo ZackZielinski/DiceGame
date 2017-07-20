@@ -38,7 +38,7 @@ function spacesMoved(){
 
 function largeBoardBattleSpaces(){
 	var spacesToBattle = Math.floor((Math.random() * 20) + 1);
-	document.getElementByClass('laegeBattleSpaces').innerHTML = spacesToBattle + " Battle Spaces";
+	document.getElementById('largeBattleSpaces').innerHTML = spacesToBattle + " Battle Spaces";
 }
 
 function smallBoardBattleSpaces(){
@@ -52,7 +52,7 @@ function enemySelect(){
 	switch (enemyChoice){
 
 		case 1:
-		document.getElementById('enemy').innerHTML = "No enemies";
+		document.getElementById('enemy').innerHTML = "No enemy. Move again";
 		break;
 		case 2:
 		document.getElementById('enemy').innerHTML = "Grunt";
