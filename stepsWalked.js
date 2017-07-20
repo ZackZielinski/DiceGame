@@ -55,7 +55,7 @@ function enemySelect(){
 		document.getElementById('enemy').innerHTML = "No enemies";
 		break;
 		case 2:
-		document.getElementById('enemy').innerHTML = "No enemies";
+		document.getElementById('enemy').innerHTML = "Grunt";
 		break;
 		case 3:
 		document.getElementById('enemy').innerHTML = "Dark hound";
