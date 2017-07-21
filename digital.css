@@ -2,8 +2,13 @@ li:hover{
 	background-color: #009900;
 }
 .footer{
+	 background-color: #009900;
 	 position: fixed;
 	 display: block;
+	 padding: 15px;
 	 bottom: 0px;
 	 width: 100%;
+}
+button:hover{
+	background-color: #009900;
 }
