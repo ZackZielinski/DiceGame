@@ -39,16 +39,23 @@
   </div>
 </nav>
 
-<center><h1>Arena Battle</h1></center>
+<center>
+<h1>Arena Battle</h1>
+</center>
 
-<button onclick="attackDamage()">Attack</button>
-<button onclick="damageBlocked()">Defend</button>
+<p>Roll the Attack die to see how much damage you will perfrom. Roll the Defend die to see how much your enemy will be blocking for. </p>
 
-<p id= "attack"></p>
-<p id= "defend"></p>
+<button class = "gameButton" onclick="attackDamage()">Attack Damage</button>
+<p class = "buttonText" id= "attack"></p>
 
-<button onclick="damageDealt(damageNumber, blockNumber)">Calculate</button>
-<p id = "stats"></p>
+<button class="bottomButton gameButton" onclick="damageBlocked()">Opponent's Defence</button>
+<p class = "buttonText" id= "defend"></p>
+
+<p>Use the Calculate button to not only to have the math be done for you, but also to see if there was a counter attack (counterattacks only apply to player versus enemies, not other players). Once you have defeated your current target, proceed to the rewards page to claim your points.</p>
+
+<button class="gameButton" onclick="damageDealt(damageNumber, blockNumber)">Calculate</button>
+<p class = "buttonText" id = "stats"></p>
+<p class = "counterText" id = "counterChance"></p>
 
 <footer class="container-fluid text-center footer"></footer>
 <script type="text/javascript" src="attackDefend.js"></script>

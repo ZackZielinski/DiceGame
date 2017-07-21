@@ -39,6 +39,7 @@ function rarityTable(){
 		document.getElementById('reward').innerHTML = rarityNumber + ": Exotic";
 		break;
 	}
+	return rarityNumber;
 }
 
 function lootTable(){
@@ -83,10 +84,83 @@ function lootTable(){
 		document.getElementById('item').innerHTML = "Weapon";
 		break;
 	}
+	return lootNumber;
 }
 
 function pointsScored(rarityLevel, lootType){
+	var points = 0;
 
-	
+	switch (rarityNumber){
 
+		case 1:
+		points = 1;
+		break;
+		case 2:
+		points = 1;
+		break;
+		case 3:
+		points = 2;
+		break;
+		case 4:
+		points = 2;
+		break;
+		case 5:
+		points = 3;
+		break;
+		case 6:
+		points = 3;
+		break;
+		case 7:
+		points = 4;
+		break;
+		case 8:
+		points = 4;
+		break;
+		case 9:
+		points = 5;
+		break;
+		case 10:
+		points = 5;
+		break;
+	}
+
+	switch (lootNumber){
+
+		case 1:
+		document.getElementById('score').innerHTML = points +=6;
+		break;
+		case 2:
+		document.getElementById('score').innerHTML = points +=5;
+		break ;
+		case 3:
+		document.getElementById('score').innerHTML = points +=4;
+		break;
+		case 4:
+		document.getElementById('score').innerHTML = points +=3;
+		break;
+		case 5:
+		document.getElementById('score').innerHTML = points +=2;
+		break;
+		case 6:
+		document.getElementById('score').innerHTML = points +=1;
+		break;
+		case 7:
+		document.getElementById('score').innerHTML = points +=1;
+		break;
+		case 8:
+		document.getElementById('score').innerHTML = points +=2;
+		break;
+		case 9:
+		document.getElementById('score').innerHTML = points +=3;
+		break;
+		case 10:
+		document.getElementById('score').innerHTML = points +=4;
+		break;
+		case 11:
+		document.getElementById('score').innerHTML = points +=5;
+		break;
+		case 12:
+		document.getElementById('score').innerHTML = points +=6;
+		break;
+	}
 }

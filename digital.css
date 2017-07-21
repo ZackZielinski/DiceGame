@@ -27,6 +27,10 @@ background-color: #009900 !important;
 .gameButton{
 	font-size: 20px;
 	display: inline-block;
+	margin-left: 200px;
+}
+.bottomButton{
+	margin-top: 10px;
 }
 
 .buttonText{
@@ -35,4 +39,8 @@ background-color: #009900 !important;
 
 .enemyButton{
 	margin-bottom: 100px;
+}
+.counterText{
+	margin-top: 10px;
+	margin-left: 350px;
 }

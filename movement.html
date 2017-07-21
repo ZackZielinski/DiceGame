@@ -41,40 +41,32 @@
 <h1>Starting the Game</h1>
 </center>
 
+
 <p>Roll the die in order to determine how many battle spaces you will be required to make depending upon how the board size will be.</p>
 
-<center>
 <button class="gameButton" onclick="largeBoardBattleSpaces()">Large board</button>
 <p class="buttonText" id = "largeBattleSpaces"></p>
-</center>
-
 <br>
-
-<center>
-<button class="gameButton" onclick="smallBoardBattleSpaces()">Small board</button>
+<button class="bottomButton gameButton" onclick="smallBoardBattleSpaces()">Small board</button>
 <p class="buttonText" id = "smallBattleSpaces"></p>
-</center>
+
 
 <p>This game utilizes a directional die to determine which way you will be moving (North, South, East, West). Each player takes a turn moving around the board.</p>
 
-<center>
 <button class="gameButton" onclick="getDirection()">Direction</button>
 <p class="buttonText" id= "direction"></p>
-</center>
-
 <br>
 
-<center>
-<button class="gameButton" onclick="spacesMoved()">Movement</button>
+<button class="bottomButton gameButton" onclick="spacesMoved()">Movement</button>
 <p class="buttonText" id= "movement"></p>
-</center>
 
-<p>If you ever land on a Battle Space, you must roll to see what enemy you will be facing. Your turn ends on the first attack and you will not move until the creature is slain. You will be using one attack per turn, as will your enemy.</p>
 
-<center>
+<p>If you ever land on a Battle Space, you must roll to see what enemy you will be facing. If you land on a Battle Space that is occupied by another player, you can either assist the player, slay your own enemy, or attempt to attack the other player and try to take one item based upon the rarity roll. Your turn ends on the first attack and you will not move until the creature or the first attacking player is slain. You will be using one attack per turn, as will your enemy(ies).</p>
+
+
 <button class=" enemyButton gameButton" onclick="enemySelect()">Enemy Encounter</button>
 <p class="buttonText" id= "enemy"></p>
-</center>
+
 
 <footer class="container-fluid text-center footer"></footer>
 

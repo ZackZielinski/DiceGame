@@ -17,16 +17,19 @@ function damageDealt(attack, defend){
 	var damageCalculate;
 	var counterChance = Math.floor((Math.random() * 20) + 1);
 
+	var healthDrop = Math.floor((Math.random() * 10) + 1);
+
 	console.log(counterChance);
 
 	if (attack >= defend){
 		damageCalculate = (attack - defend);
 		document.getElementById('stats').innerHTML = "Took " + damageCalculate + " damage";
 	}
-	else if ((defend / 2) > attack && counterChance >= defend) {
-		document.getElementById('stats').innerHTML = "Counterattack: -5 health";
+	else if ((defend / 2) >= attack && counterChance >= defend) {
+		document.getElementById('stats').innerHTML = "No damage taken";
+		document.getElementById('counterChance').innerHTML = "Counterattack: -" + healthDrop + " health";
 	}
 	else{
-		document.getElementById('stats').innerHTML = "Took no damage";	
+		document.getElementById('stats').innerHTML = "No damage taken";	
 	}
 }
