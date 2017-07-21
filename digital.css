@@ -1,3 +1,13 @@
+body{
+	background-color: hsla(180, 90%, 50%, 0.3);
+}
+
+p{
+	font-size: 20px; 
+	margin: 50px;
+
+}
+
 li:hover{
 	background-color: #009900;
 }
@@ -9,6 +19,9 @@ li:hover{
 	 bottom: 0px;
 	 width: 100%;
 }
-button:hover{
-	background-color: #009900;
+.navbar-toggle{
+background-color: #009900 !important;
+}
+.gameButton{
+	font-size: 20px;
 }
