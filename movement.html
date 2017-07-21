@@ -42,29 +42,38 @@
 </center>
 
 <p>Roll the die in order to determine how many battle spaces you will be required to make depending upon how the board size will be.</p>
+
 <center>
 <button class="gameButton" onclick="largeBoardBattleSpaces()">Large board</button>
-<p id = "largeBattleSpaces"></p>
-
-<button class="gameButton" onclick="smallBoardBattleSpaces()">Small board</button>
-<p id = "smallBattleSpaces"></p>
+<p class="buttonText" id = "largeBattleSpaces"></p>
 </center>
 
-<p>This game utilizes a directional die to determine which way you will be moving (North, South, East, West).</p>
+<br>
+
+<center>
+<button class="gameButton" onclick="smallBoardBattleSpaces()">Small board</button>
+<p class="buttonText" id = "smallBattleSpaces"></p>
+</center>
+
+<p>This game utilizes a directional die to determine which way you will be moving (North, South, East, West). Each player takes a turn moving around the board.</p>
 
 <center>
 <button class="gameButton" onclick="getDirection()">Direction</button>
-<p id= "direction"></p>
+<p class="buttonText" id= "direction"></p>
+</center>
 
+<br>
+
+<center>
 <button class="gameButton" onclick="spacesMoved()">Movement</button>
-<p id= "movement"></p>
+<p class="buttonText" id= "movement"></p>
 </center>
 
 <p>If you ever land on a Battle Space, you must roll to see what enemy you will be facing. Your turn ends on the first attack and you will not move until the creature is slain. You will be using one attack per turn, as will your enemy.</p>
 
 <center>
-<button class="gameButton" onclick="enemySelect()">Enemy Encounter</button>
-<p id= "enemy"></p>
+<button class=" enemyButton gameButton" onclick="enemySelect()">Enemy Encounter</button>
+<p class="buttonText" id= "enemy"></p>
 </center>
 
 <footer class="container-fluid text-center footer"></footer>

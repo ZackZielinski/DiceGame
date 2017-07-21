@@ -5,12 +5,12 @@ body{
 p{
 	font-size: 20px; 
 	margin: 50px;
-
 }
 
 li:hover{
 	background-color: #009900;
 }
+
 .footer{
 	 background-color: #009900;
 	 position: fixed;
@@ -19,9 +19,20 @@ li:hover{
 	 bottom: 0px;
 	 width: 100%;
 }
+
 .navbar-toggle{
 background-color: #009900 !important;
 }
+
 .gameButton{
 	font-size: 20px;
+	display: inline-block;
+}
+
+.buttonText{
+	display: inline;
+}
+
+.enemyButton{
+	margin-bottom: 100px;
 }

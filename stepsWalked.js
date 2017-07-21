@@ -52,7 +52,7 @@ function enemySelect(){
 	switch (enemyChoice){
 
 		case 1:
-		document.getElementById('enemy').innerHTML = "No enemy. Move again";
+		document.getElementById('enemy').innerHTML = "No enemy";
 		break;
 		case 2:
 		document.getElementById('enemy').innerHTML = "Grunt";
