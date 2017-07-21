@@ -40,22 +40,35 @@
 </nav>
 
 <center>
-<h1>Arena Battle</h1>
+<h1 style="color: #1a1aff">Arena Battle</h1>
 </center>
 
-<p>Roll the Attack die to see how much damage you will perfrom. Roll the Defend die to see how much your enemy will be blocking for. </p>
+<p>Roll the 'Attack' die to see how much damage you will perfrom. Roll the 'Defend' die to see how much your enemy will be blocking for. </p>
 
 <button class = "gameButton" onclick="attackDamage()">Attack Damage</button>
 <p class = "buttonText" id= "attack"></p>
 
-<button class="bottomButton gameButton" onclick="damageBlocked()">Opponent's Defence</button>
-<p class = "buttonText" id= "defend"></p>
+<button class="bottomButton gameButton" onclick="enemyBlocked()">Opponent's Defence</button>
+<p class = "buttonText" id= "enemydefend"></p>
 
 <p>Use the Calculate button to not only to have the math be done for you, but also to see if there was a counter attack (counterattacks only apply to player versus enemies, not other players). Once you have defeated your current target, proceed to the rewards page to claim your points.</p>
 
-<button class="gameButton" onclick="damageDealt(damageNumber, blockNumber)">Calculate</button>
+<button class="gameButton" onclick="damageDealt(damageNumber, enemyDefend)">Calculate</button>
 <p class = "buttonText" id = "stats"></p>
-<p class = "counterText" id = "counterChance"></p>
+<p class = "counterText" id = "counterChance"></p> 
+
+<p>Now it's your opponent's turn to strike. Roll the 'Enemy attack' die to see how much they hit you for. Roll the 'Damage Blocked' die to know how much damage you are protecting. (Counterattacks are not calculated in player versus player matches)</p>
+
+<button class = "gameButton" onclick="enemyAttack()">Enemy Attack</button>
+<p class = "buttonText" id= "enemyAttack"></p>
+
+<button class=" footerButton bottomButton gameButton" onclick="damageBlocked()">Damage Blocked</button>
+<p class = "buttonText" id= "defend"></p>
+
+
+
+<button class="footerButton gameButton" onclick="enemyDamageDealt(enemyDamage, blockNumber)">Calculate</button>
+<p class = "buttonText" id = "enemyStats"></p>
 
 <footer class="container-fluid text-center footer"></footer>
 <script type="text/javascript" src="attackDefend.js"></script>

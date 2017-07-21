@@ -9,34 +9,34 @@ function rarityTable(){
 	switch (rarityNumber){
 
 		case 1:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Common";
+		document.getElementById('reward').innerHTML = "Common";
 		break;
 		case 2:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Common";
+		document.getElementById('reward').innerHTML = "Common";
 		break;
 		case 3:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Uncommon";
+		document.getElementById('reward').innerHTML = "Uncommon";
 		break;
 		case 4:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Uncommon";
+		document.getElementById('reward').innerHTML = "Uncommon";
 		break;
 		case 5:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Rare";
+		document.getElementById('reward').innerHTML = "Rare";
 		break;
 		case 6:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Rare";
+		document.getElementById('reward').innerHTML = "Rare";
 		break;
 		case 7:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Legendary";
+		document.getElementById('reward').innerHTML = "Legendary";
 		break;
 		case 8:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Legendary";
+		document.getElementById('reward').innerHTML = "Legendary";
 		break;
 		case 9:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Exotic";
+		document.getElementById('reward').innerHTML = "Exotic";
 		break;
 		case 10:
-		document.getElementById('reward').innerHTML = rarityNumber + ": Exotic";
+		document.getElementById('reward').innerHTML = "Exotic";
 		break;
 	}
 	return rarityNumber;
@@ -127,40 +127,100 @@ function pointsScored(rarityLevel, lootType){
 	switch (lootNumber){
 
 		case 1:
-		document.getElementById('score').innerHTML = points +=6;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (6*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 6) +  " Points";
+		}
 		break;
 		case 2:
-		document.getElementById('score').innerHTML = points +=5;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (5*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 5) +  " Points";
+		}
 		break ;
 		case 3:
-		document.getElementById('score').innerHTML = points +=4;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (4*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 4) +  " Points";
+		}
 		break;
 		case 4:
-		document.getElementById('score').innerHTML = points +=3;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (3*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 3) +  " Points";
+		}
 		break;
 		case 5:
-		document.getElementById('score').innerHTML = points +=2;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (2*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 1) +  " Points";
+		}
 		break;
 		case 6:
-		document.getElementById('score').innerHTML = points +=1;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (1*3)) +  "P oints";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 1) +  " Points";
+		}
 		break;
 		case 7:
-		document.getElementById('score').innerHTML = points +=1;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (1*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 1) +  " Points";
+		}
 		break;
 		case 8:
-		document.getElementById('score').innerHTML = points +=2;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (2*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 2) +  " Points";
+		}
 		break;
 		case 9:
-		document.getElementById('score').innerHTML = points +=3;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (3*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 3) +  " Points";
+		}
 		break;
 		case 10:
-		document.getElementById('score').innerHTML = points +=4;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (4*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 4) +  " Points";
+		}
 		break;
 		case 11:
-		document.getElementById('score').innerHTML = points +=5;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (5*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 5) +  " Points";
+		}
 		break;
 		case 12:
-		document.getElementById('score').innerHTML = points +=6;
+		if (rarityNumber === 9 || rarityNumber === 10){
+		document.getElementById('score').innerHTML = (points + (6*3)) +  " Points";
+		}
+		else{
+		document.getElementById('score').innerHTML = (points + 6) +  " Points";
+		}
 		break;
 	}
 }

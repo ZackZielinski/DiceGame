@@ -2,16 +2,64 @@
 <html>
 <head>
 	<title>Loot</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="digital.css">
+  <style>
+    .navbar {width: 100%;
+    	bottom: 5px;
+    	background-color: #008000;
+    }
+  </style>
 </head>
 <body>
-<button onclick="rarityTable()">Rarity</button>
-<button onclick="lootTable()">Item</button>
 
-<p id= "reward"></p>
-<p id= "item"></p>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"><span style="color: #1a1aff">G.</span><span style="color: #ffa500">G.</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Backstory</a></li>
+        <li><a href="movement.html">Start Playing</a></li>
+        <li><a href="battle.html">Battle Stage</a></li>
+        <li><a href="rewards.html">Rewards</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<button onclick="pointsScored(rarityNumber, lootNumber)">Score Accumulated</button>
-<p id="score"></p>
+<center>
+<h1 style="color: #1a1aff">Claim Rewards</h1>
+
+<p>Click the 'Rarity' button to see how rare of an item you will be getting. The rarer the item, the more points they are worth (Exotics are worth triple the points!).</p>
+</center>
+
+<button class="gameButton" onclick="rarityTable()">Rarity</button>
+<p class="buttonText" id= "reward"></p>
+
+<center>
+<p>Click the 'Item Get' button to know what item you have obtained. Weapons and shields are worth more than armor.</p>
+</center>
+
+<button class="bottomButton gameButton" onclick="lootTable()">Item Get</button>
+<p class="buttonText" id= "item"></p>
+
+<center>
+<p>Click the 'Score Accumulated' button to have your item added to your rarity so you know how many points that specific item is worth.</p>
+</center>
+
+<button class="footerButton gameButton" onclick="pointsScored(rarityNumber, lootNumber)">Score Accumulated</button>
+<p class="buttonText" id="score"></p>
 
 <footer class="container-fluid text-center footer"></footer>
 <script type="text/javascript" src="loot.js"></script>
